@@ -1,7 +1,7 @@
 {
     //"cmd": ["g++", "-Wall", "${file_name}","-o", "${file_base_name}.exe"], 
 
-    "cmd": ["g++ '${file}' -o '${file_path}/${file_base_name}'"],
+    "cmd": ["bash exec.sh"],
 
     "selector": "source.c++",
     "shell": true,

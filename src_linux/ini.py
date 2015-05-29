@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import requests
 import os
 from bs4 import BeautifulSoup
@@ -55,6 +57,8 @@ for div in soup.findAll('div', 'problemindexholder'):
     shutil.copyfile("zx.sh",CF+"/"+chr(ord('A')+counter)+"/zx.sh")
     shutil.copyfile("temp.txt",CF+"/"+chr(ord('A')+counter)+"/round.txt")
     shutil.copyfile("template.cpp", CF+"/"+chr(ord('A')+counter)+"/aprog.cpp" )
+    shutil.copyfile("exec.sh",CF+"/"+chr(ord('A')+counter)+"/exec.sh")
+    shutil.copyfile("kipawa_time.txt",CF+"/"+chr(ord('A')+counter)+"/kipawa_time.txt")
     
     detach_dir = CF+"/"+chr(ord('A')+counter)+"/"
     att_path = os.path.join(detach_dir, chr(ord('A')+counter)+".cpp")

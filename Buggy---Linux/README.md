@@ -1,4 +1,4 @@
-<h1>Buggy : V.2.2</h1>
+<h1>Buggy : V.2.3</h1>
 
 A batch-testing sublime plug-in for CodeForces
 <br><br>
@@ -7,7 +7,7 @@ This application is to assist a competitive-programmer in a CodeForces round. Th
 For now the application is for C++ users only.
 <br>
 <br>
-<b>The project is under constant development and the files in the repository might be unstable. It is therefore advised to download the latest release for usage. <a href="https://github.com/pakhandi/Buggy---Linux/archive/V.2.2.zip">This is the link</a> to the latest release</b>
+<b>The project is under constant development and the files in the repository might be unstable. It is therefore advised to download the latest release for usage. <a href="https://github.com/pakhandi/Buggy---Linux/archive/V.2.3.zip">This is the link</a> to the latest release</b>
 <br>
 <b>NOTE : </b>Please try the Plug-in once before using it in actual contest to avoid any last minute confusions.<br>
 <b>Make Sure you have read the <a href="#installation">Installation</a> and <a href="#usage">Usage</a> very very carefully.</b>
@@ -15,6 +15,7 @@ For now the application is for C++ users only.
 
 <h3>Index</h3>
 <ol>
+<li><a href="#newFeatures">New Features</a></li>
 <li><a href="#requisites">Requisites</a></li>
 <li><a href="#installation">Installation</a></li>
 <li><a href="#usage">Usage</a></li>
@@ -22,6 +23,15 @@ For now the application is for C++ users only.
 <li><a href="#testing">Testing</a></li>
 <li><a href="http://bugecode.com/post.php?pid=121" target="_blank">FAQ</a></li>
 </ol>
+
+<a name="newFeatures"><h3>New Features</h3></a>
+New Features in the latest release (V.2.3) include :
+<ul>
+<li>Execution time for the tested program (which includes only the execution time and not the input time)
+<li>Time elapsed till the program is executed (Time is counted from the moment the test cases are fetched)
+</ul>
+Contributed by <a href="https://github.com/kipawa"> Aditya Shankar Tripathi (kipawa) </a> 
+
 
 <a name="requisites"><h3>Requisites</h3></a>
 <ul>
@@ -50,12 +60,11 @@ For now the application is for C++ users only.
 	</li>
 	</ul>
 </li>
-<li><b>NOTE : xdg-open command is used. Make suitable replacements/installations (in zx.sh and start.sh).</b></li>
 </ul>
 
 <a name="installation"><h3>Installation</h3></a>
 <ol>
-<li>Download all the files from <a href="https://github.com/pakhandi/Buggy---Linux/archive/V.2.2.zip">here : V.2.2</a>.</li>
+<li>Download all the files from <a href="https://github.com/pakhandi/Buggy---Linux/archive/V.2.3.zip">here : V.2.3</a>.</li>
 <li>Shift the <b>Buggy---Linux</b> and <b>CF</b> folder to <b>~/.config/sublime-text-3/Packages/User/</b></li>
 <li>Make sure proper execution permission is given to <b>ini</b> and shell scripts.</li>
 <li>Open sublime. GoTo <b>"Tools -> Build System"</b> and select <b>CF</b></li>
@@ -77,7 +86,7 @@ For now the application is for C++ users only.
 <li>Make sure Sublime Side-Bar is visible (<b>View -> Side Bar -> Show Side Bar</b>).</li>
 <li>To start parsing the test-cases, <b>(Buggy -> Start)</b>.</li>
 <li>For parsing the test-cases, provide the round-number you see in the url of the contest.</li>
-<li>Compile the code before running it on test-cases (<b>Ctrl+B</b> or <b>Buggy -> Compile</b>)</li>
+<li>Compile the code before running it on test-cas2.es (<b>Ctrl+B</b> or <b>Buggy -> Compile</b>)</li>
 <li>Copy the code before going to submit the code.</li>
 <li>If you want you can change the key-bindings too.</li>
 <li>If you are working behind proxy
@@ -87,10 +96,7 @@ For now the application is for C++ users only.
 	<li>username:password@proxy:port</li>
 	</ul>
 </li>
-<li>If you want the problem-set to open in your default browser, uncomment the last two lines of <b>CF/dist/start.sh</b> </li>
 </ul>
-<center><img src="https://github.com/pakhandi/Buggy---Linux/blob/master/src_linux/menu.jpg?raw=true"></center>
-<br>
 <center><img src="https://github.com/pakhandi/Buggy---Linux/blob/master/src_linux/CF.JPG?raw=true"></center>
 <br><br>
 
